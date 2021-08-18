@@ -1,6 +1,7 @@
 import React from 'react';
 import "./intro.scss";
 import Button from '@material-ui/core/Button';
+import image from '../../assets/tool.png';
 
 
 export default function intro() {
@@ -8,7 +9,7 @@ export default function intro() {
         <div className="intro" id="intro">
         <div className="left">
 <div className="image">
-    <img src="assets/child.jpg" alt="learning"/>
+    <img src={image} alt="pens"/>
 </div>
         </div>
         <div className="right">

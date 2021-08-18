@@ -7,9 +7,11 @@
     .left{
          flex: 1;
          overflow: hidden;
+         
 
          img{
-             height: 100%;
+             margin-top: 30px;
+             height: 80%;
 
              @include mobile {
                 
@@ -26,7 +28,9 @@
     justify-content: center;
 
     h2{
-        font-size: 30px;
+        padding: 0 0 10px;
+	margin-bottom: 10px;
+    font-size: 40px;
     }
     form{
     width: 70%;
@@ -38,8 +42,14 @@
     flex-direction: space-around;
 
     input{
-        width: 300px;
-        height: 30px;
+        width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+    border-radius: 10px;
+	margin-bottom: 22px;
         font-size: 14px;
         @include mobile {
             width: 100px ;
@@ -47,9 +57,9 @@
         }
     }
     textarea{
-        width: 300px;
-        height: 200px;
-        font-size: 14px;
+        width: 100%;
+        min-height: 150px;
+        background-color: rgba(230, 230, 230, 0.6);
 
         @include mobile {
             width: 100px ;
@@ -57,13 +67,14 @@
         }
     }
     button{
-        width: 150px; 
-        height: 30px;
-        color: white;
-        background-color: $mainColor;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #2ecc71;
+        color: #fff;
+        font-size: 1.1rem;
         border: none;
+        outline: none;
         border-radius: 10px;
-        font-weight: 500;
         cursor: pointer;
 
         &:focus{

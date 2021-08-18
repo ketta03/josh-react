@@ -1,23 +1,23 @@
 import React from 'react';
 import "./works.scss"
+import image from '../../assets/about.svg';
 
 export default function Works() {
     return (
         <div className="works" id="works">
             <div className="left">
-                <img src="assets/about.jpg" alt="about"/>
+                <img src={image} alt="about"/>
             </div>
             <div className="right">
             <div className="wrapper">
         <h1>
             About Us.
         </h1>
-        <div className="about">
+    
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+        We are a group of certified and experienced teachers in lower class learning
+Teaching numeracy (mathematics) and grammar which includes reading , writing and spelling.
         </p> 
-        </div>
-        
         
         </div>
             </div>
